@@ -1,0 +1,21 @@
+[2026-11-19 17:38:10] [INFO] Sistema Software FJ inicializado correctamente.
+[2026-11-19 17:38:10] [INFO] Cliente registrado: [C001] Laura Martínez
+[2026-11-19 17:38:10] [ERROR] Registro de cliente -> ErrorValidacion: Datos inválidos al registrar el cliente 'C002'. | Causa original: ValueError: El correo electrónico no es válido.
+[2026-11-19 17:38:10] [INFO] Cliente registrado: [C003] Andrés Gómez
+[2026-11-19 17:38:10] [INFO] Servicio registrado: [S001] Sala 'Sala Innovación' (Capacidad: 12 personas, con proyector)
+[2026-11-19 17:38:10] [INFO] Servicio registrado: [S002] Equipo 'Workstation Dell Precision' (Tipo: Portátil CAD, Depósito: $50,000.00)
+[2026-11-19 17:38:10] [INFO] Servicio registrado: [S003] Asesoría 'Arquitectura Cloud' (Especialidad: DevOps, Nivel: avanzado)
+[2026-11-19 17:38:10] [ERROR] Creación de servicio S004 -> ErrorValidacion: La tarifa base debe ser mayor a cero.
+[2026-11-19 17:38:10] [ERROR] Creación de servicio S005 -> ErrorValidacion: La especialidad debe tener al menos 3 caracteres.
+[2026-11-19 17:38:10] [INFO] Reserva creada: [R001] Cliente=C001, Servicio=S001, Duración=3h
+[2026-11-19 17:38:10] [INFO] Reserva confirmada: [R001] Total=$273,105.00
+[2026-11-19 17:38:10] [INFO] Reserva creada: [R002] Cliente=C003, Servicio=S001, Duración=2h
+[2026-11-19 17:38:10] [ERROR] Confirmación de reserva 'R002' -> ErrorServicioNoDisponible: El servicio 'Sala Innovación' no está disponible para reservar.
+[2026-11-19 17:38:10] [INFO] Reserva creada: [R003] Cliente=C003, Servicio=S002, Duración=4h
+[2026-11-19 17:38:10] [ERROR] Confirmación de reserva 'R003' -> ErrorReservaInvalida: Fallo al confirmar la reserva R003: error en el cálculo de costos. | Causa original: ErrorCalculoInconsistente: El descuento debe estar entre 0 y 1 (ej. 0.10).
+[2026-11-19 17:38:10] [INFO] Reserva confirmada: [R003] Total=$226,100.00
+[2026-11-19 17:38:10] [INFO] Reserva procesada: [R003]
+[2026-11-19 17:38:10] [ERROR] Cancelación de reserva 'R003' -> ErrorOperacionNoPermitida: No se puede cancelar la reserva R003 porque ya fue procesada.
+[2026-11-19 17:38:10] [INFO] Reserva creada: [R004] Cliente=C001, Servicio=S003, Duración=2h
+[2026-11-19 17:38:10] [INFO] Reserva confirmada: [R004] Total=$360,000.00
+[2026-11-19 17:38:10] [INFO] Reserva cancelada: [R004]
